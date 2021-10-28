@@ -5,3 +5,5 @@ options {
 }
 
 import JavaLexerBase;
+
+COMMA : ',' ;
