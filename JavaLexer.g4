@@ -7,3 +7,9 @@ options {
 import JavaLexerBase;
 
 COMMA : ',' ;
+
+DOT : '.' ;
+
+ASTERISK : '*' ;
+
+COLON : ':' ;

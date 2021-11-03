@@ -15,13 +15,13 @@ BOOLEAN : 'boolean';
 DO : 'do';
 IF : 'if';
 PRIVATE : 'private';
-THIS : 'this';
+//THIS : 'this';
 BREAK : 'break';
-DOUBLE : 'double';
+//DOUBLE : 'double';
 IMPLEMENTS : 'implements';
 PROTECTED : 'protected';
 THROW : 'throw';
-BYTE : 'byte';
+//BYTE : 'byte';
 ELSE : 'else';
 IMPORT : 'import';
 PUBLIC : 'public';
@@ -40,10 +40,10 @@ TRY : 'try';
 FINAL : 'final';
 INTERFACE : 'interface';
 STATIC : 'static';
-VOID : 'void';
+//VOID : 'void';
 CLASS : 'class';
 FINALLY : 'finally';
-LONG : 'long';
+//LONG : 'long';
 STRICTFP : 'strictfp';
 VOLATILE : 'volatile';
 CONST : 'const';
@@ -62,7 +62,7 @@ RBRACKET : ']' ;
 
 SEMICOLON : ';' ;
 
-NAME : [a-zA-Z_][a-zA-Z0-9_]* ;
+NAME : [a-zA-Z_][a-zA-Z0-9_$]* ;
 
 NUMBER : [0-9]+ ;
 
@@ -70,9 +70,9 @@ COMMENT : ('//' .*? ('\n')? | '/*' (. | '\n')*? '*/') -> skip;
 
 STRING : '\'' .*? '\'' | '"' .*? '"' | '\'\'\'' .*? '\'\'\'' | '"""' .*? '"""';
 
-OPERATORS: '+' | '-' | '*' | '/' | '%' | '**' | '//' | '@' | '&' | '|' | '^' | '~' | '<<' | '>>' | '==' | '!=' |
+OPERATORS: '?' | '+' | '-' | '*' | '/' | '%' | '**' | '//' | '@' | '&' | '|' | '^' | '~' | '<<' | '>>' | '==' | '!=' |
            '>' | '<' | '>=' | '<=' | '=' | ':=' | '+=' | '-=' | '*=' | '/=' | '%=' | '**=' | '//=' | '@=' | '&=' |
-           '|=' | '^=' | '<<=' | '>>=' | ':' | '->' | '.' | ',';
+           '|=' | '^=' | '<<=' | '>>=' | ':' | '->' | '.' | ',' | '!';
 
 WS : (' ' | '\t' | '\n')+ -> skip ;
 
