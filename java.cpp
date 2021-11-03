@@ -23,10 +23,10 @@ int main(int argc, char* argv[]) {
     parser.setTrace(true);
     try {
         antlr4::tree::ParseTree* tree = parser.main();
-        // std::cout << tree->toStringTree() << std::endl;
+        // std::cout << tree->toStringTree() << '\n';
         return 0;
     } catch (std::invalid_argument &e) {
-        std::cout << e.what() << std::endl;
+        std::cout << e.what() << '\n';
         return 1;
     }
 
